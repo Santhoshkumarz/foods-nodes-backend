@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "name": "foods-nodes-backend",
+    "builds": [
+      {
+        "src": "app.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/app.js"
+      },
+      {
+        "src": "/version",
+        "dest": "/app.js"
+      }
+    ],
+    "env": {
+      "PORT": "3007",
+      "NODE_ENV": "production",
+      "DATABASE_URL": "your-database-url"
+    }
+  }
+  
