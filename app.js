@@ -1,3 +1,4 @@
+// app.js
 const express = require("express");
 const db = require("./src/config/database");
 const bodyParser = require("body-parser");
