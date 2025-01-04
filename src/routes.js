@@ -1,14 +1,12 @@
-const express = require("express");
-const foodsRoutes = require("./routes/foodRoutes");
-const ordersRoutes = require("./routes/orderRoutes");
-const whatsappRoutes = require("./routes/whatsappRoutes");
+const express = require('express');
+const foodRoutes = require('./routes/foodRoutes');
+const dailyLogRoutes = require('./routes/dailyLogRoutes');
+const userRoutes = require('./routes/userRoutes'); 
 
 const router = express.Router();
 
-router.use("/foods", foodsRoutes);
-
-router.use("/food-orders", ordersRoutes);
-
-router.use('/whatsapp', whatsappRoutes);
+router.use('/foods', foodRoutes);
+router.use('/daily-logs', dailyLogRoutes);
+router.use('/users', userRoutes);
 
 module.exports = router;
