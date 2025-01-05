@@ -1,5 +1,5 @@
 const express = require('express');
-const dailyLogController = require('../controller/dailyLogController');
+const dailyLogController = require('../controllers/dailyLogController');
 
 const router = express.Router();
 

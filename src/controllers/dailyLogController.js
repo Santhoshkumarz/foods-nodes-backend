@@ -1,4 +1,4 @@
-const DailyLog = require('../model/dailyLogModel');
+const DailyLog = require('../models/dailyLogModel');
 
 // Create a new daily log
 exports.createDailyLog = (req, res) => {
