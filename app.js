@@ -25,3 +25,11 @@ app.get("/", (req, res) => {
 
 // Export the app for Vercel serverless deployment
 module.exports = app;
+
+// Start the server only for local development
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.SERVERPORT || 3007;
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}

@@ -9,4 +9,11 @@ router.use('/foods', foodRoutes);
 router.use('/daily-logs', dailyLogRoutes);
 router.use('/users', userRoutes);
 
+router.get("/test", (req, res) => {
+  res.json({ message: "API is working!" });
+});
+
+module.exports = router;
+
+
 module.exports = router;
